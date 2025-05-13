@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sydney Events</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sydney Upcoming Events</h1>
+    <input type="email" id="email" placeholder="Enter your email" />
+    <div class="events-grid">
+      <% if (events.length === 0) { %>
+  <p>No events found!</p>
+<% } %>
+
+      <% events.forEach(event => { %>
+        <div class="card">
+          <h3><%= event.title %></h3>
+          <p><%= event.date %></p>
+          <button onclick="getTicket('<%= event.link %>')">GET TICKETS</button>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+
+  <script>
+    function getTicket(link) {
+      const email = document.getElementById("email").value;
+      if (!email) return alert("Please enter your email!");
+      alert("Email captured: " + email);
+      window.location.href = link;
+    }
+  </script>
+</body>
+</html>

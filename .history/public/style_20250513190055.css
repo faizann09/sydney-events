@@ -1,0 +1,110 @@
+/* Custom styles for a classy look */
+
+/* General styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+header .lead {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+/* Email section */
+.email-section .form-label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-control {
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #d4a373;
+  box-shadow: 0 0 8px rgba(212, 163, 115, 0.3);
+}
+
+.btn-custom-gold {
+  background-color: #d4a373;
+  color: white;
+  border-radius: 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom-gold:hover {
+  background-color: #c1905e;
+  transform: scale(1.05);
+}
+
+/* Event cards */
+.event-card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.event-card .card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.event-date {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+.btn-custom-navy {
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 25px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-custom-navy:hover {
+  background-color: #1a2a44;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header .lead {
+    font-size: 1rem;
+  }
+
+  .email-section .form-label {
+    font-size: 1.3rem;
+  }
+}
